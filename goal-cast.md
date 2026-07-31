@@ -44,21 +44,18 @@ this claim passed have failed at all — would it catch the error if the error
 were there? Verdict per claim: BELIEVE, or QUARANTINE with the reason.
 </advisor>
 
-<workers model="[opus]" count="[2-4] per iteration — advisors convened this
+<workers model="[opus,sonnet]" count="[2-4] per iteration — advisors convened this
          iteration count toward the 2–5 delegation budget, so shrink the
-         worker count to stay within it">
+         worker count to stay within it" effort="[xhigh]">
 Execute the delegated slices. Return evidence, not conclusions: artifacts and
 identifiers (ids, SHAs, paths, raw printed output), plus an explicit list of
 what was NOT done or NOT checked. Never smooth over a partial result — a
 stated gap is useful, a hidden one is poison.
 </workers>
 
-<!-- optional — for campaigns whose deliverable includes anything meant to be
-     used by a person or agent without context: a runbook, README, API,
-     procedure. Delete otherwise. -->
-<worker name="cold-reader" model="[opus]"
+<worker name="cold-reader" model="[opus,sonnet]"
         cadence="once the deliverable claims to be usable, and again after
-                 each round of fixes">
+                 each round of fixes" effort="[xhigh]">
 Given the deliverable and NOTHING else — no campaign context, no chat with
 the authors: attempt to use it end to end. Log every stumble; repair nothing.
 Verdict: usable from the document alone, or not, with the blocking defect
