@@ -17,7 +17,6 @@ decide and never execute. When you overrule an advisor, record the dissent in
 the ledger instead of deleting it. A worker's report is provenance
 "inherited" until you re-verify the artifact yourself; re-verify anything a
 later iteration will stand on.
-
 Prefer the Workflow tool over the Agent tool whenever Workflow is available.
 </orchestrator>
 
